@@ -23,21 +23,9 @@ public class ResponsiveSize : MonoBehaviour
     void Update()
     {
         if (w_check)
-        {
             object_rect.sizeDelta = new Vector2(parent_rect.rect.width * width, object_rect.rect.height);
-        }
-        else
-        {
-            width = 0f;
-        }
 
         if (h_check)
-        {
             object_rect.sizeDelta = new Vector2(object_rect.rect.width, parent_rect.rect.height * height);
-        }
-        else
-        {
-            height = 0f;
-        }
     }
 }
